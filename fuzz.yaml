@@ -8,6 +8,6 @@ targets:
          - make bootstrap
       corpus: ./command/ssh-corpus/
       harness:
-	function: FuzzerEntrypoint
+	 - function: FuzzerEntrypoint
 	 
     
