@@ -1,0 +1,13 @@
+base: ubuntu:16.04
+setup:
+language: go
+version: "1.12"
+targets:
+    - name: ssh-cmdline
+      setup:
+         - make bootstrap
+      corpus: ./command/ssh-corpus/
+      harness:
+	function: FuzzerEntrypoint
+	 
+    
