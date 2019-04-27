@@ -2,6 +2,7 @@ base: ubuntu:16.04
 setup:
 language: go
 version: "1.12"
+checkout: github.com/hashicorp/vault
 targets:
     - name: ssh-cmdline
       setup:
@@ -9,5 +10,5 @@ targets:
       corpus: ./command/ssh-corpus/
       harness:
          function: FuzzerEntrypoint
-         package: command
+         package: github.com/hashicorp/vault/command
     
