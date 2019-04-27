@@ -7,7 +7,7 @@ targets:
     - name: ssh-cmdline
       setup:
          - make bootstrap
-      corpus: ./command/ssh-corpus/
+      corpus: ./command/ssh_corpus/
       harness:
          function: FuzzerEntrypoint
          package: github.com/hashicorp/vault/command
