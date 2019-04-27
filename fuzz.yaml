@@ -5,8 +5,8 @@ version: "1.12"
 checkout: github.com/hashicorp/vault
 targets:
     - name: ssh-cmdline
-      setup:
-         - make bootstrap
+#      setup:
+#         - make bootstrap
       corpus: ./command/ssh_corpus/
       harness:
          function: FuzzerEntrypoint
